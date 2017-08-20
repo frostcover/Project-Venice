@@ -26,9 +26,9 @@ if(isset($_GET['query'])) {
         $response = $response . '<div class="twtBx">
         <div class="propic" style="background: url(' . $data["user"]["profile_image_url"] . ');background-size: cover;">
         </div>
-        <div style = "color: #546E7A; width: 530px;">
+        <div style = "color: #546E7A; width: 530px;"><a href = "https://twitter.com/'.$data["user"]["screen_name"].'">
             <div class="name" style="font-size: 23pt; font-weight: 300;">' . $data["user"]["name"] . '</div>
-            <div class="scr_name" style="color: #90A4AE;">@' . $data["user"]["screen_name"] . '</div>
+            <div class="scr_name" style="color: #90A4AE;">@' . $data["user"]["screen_name"] . '</div></a>
             <div class="tweet">
                 ' . $data["text"] . '
             </div>
@@ -59,6 +59,7 @@ if(isset($_GET['query'])) {
     <title>#tagSearch</title>
     <link rel="stylesheet" href="design.css">
     <link rel="shortcut icon" href="srchfv.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -78,9 +79,8 @@ if(isset($_GET['query'])) {
             <div class="end">-finish-</div>
         </div>
         <div class="footer">
-            Build 2017 | Shubhesh Dwivedi (@cafeshoes)
+            Build 2017 | Shubhesh Dwivedi (<a href = 'https://twitter.com/cafeshoes' style='text-decoration:none; color:#2196f3;'>@cafeshoes</a>)
         </div>
     </div>
 </body>
 </html>
-
