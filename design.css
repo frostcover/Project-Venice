@@ -1,99 +1,47 @@
-body
-{
-    margin:0px;
-    font-family:"Roboto";
-    background: #f1f1f1;
+body {
+    margin:0;
+    font-family:"Roboto", arial, sans-serif;
+    background: #e4e4e4;
 }
-a
-{
+a {
     color:inherit;
     text-decoration: none;
 }
-.logo
-{
-    padding: 30px;
-    font-size: 46pt;
+.no-pad {
+    padding: 0;
+}
+.hdr {
+    background: #e4e4e4;
+}
+.logo {
+    padding: 8px;
+    font-size: 4em;
+    box-sizing: border-box;
     text-align: center;
-    color: #ffffff;
-    background-color: #2196F3;
-    box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.06);
-}
-.sbxcont
-{
-    width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-.outercover
-{
-    width: 736px;
-    margin: auto;
-    background-color: #dedede;
-    padding: 6px 33px;
-    margin-top: 70px;
-    border-radius: 1000px;
-    font-weight: 300
-}
-.sbox
-{
-    width: 101%;
-    font-size: 13pt;
-    padding: 7px;
-    border: none;
-    background: #dedede;
-    font-family: Roboto;
-    outline: none;
-    color: #455A64;
-}
-.footer
-{
-    margin: auto;
-    margin-top: 50px;
-    text-align: center;
-    color: #607D8B;
-    font-size: 14pt;
-}
-.twtBx
-{
-    width: 735px;
-    background-color: white;
-    display: flex;
-    padding: 21px 0px 21px 21px;
-    border-bottom:1px solid #e6e6e6;
-}
-.propic
-{
-    height: 75px;
-    border-radius: 1000px;
-    width: 75px;
-    margin-right: 30px;
-}
-.tweet
-{
-    margin-top: 10px;
-    font-size: 11pt;
-}
-.rhdr
-{
-    padding: 12px 15px;
-    text-align: center;
-    background-color: #2196F3;
-    font-size: 16pt;
+    background-color: #4CAF50;
     color: white;
-    border-radius: 15px 12px 0px 0px;
 }
-.result
-{
-    width: 756px;
+.sbxcont input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px;
+    /* border-radius: 6px; */
+    border: none;
+    font-size: 2.5em;
+    font-weight: 300;
+    box-shadow: 9px 9px 14px #ececec;
+}
+.result {
+    width: 95%;
     margin: auto;
-    margin-top: 30px;
+    padding: 16px 30px;
 }
-.end
-{
-    padding: 12px 15px;
+.result h1 {
+    font-weight: 400;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 20px;
     text-align: center;
-    background-color: rgba(69, 70, 70, 0.14);
-    font-size: 12pt;
-    color: #607D8B;
-    border-radius: 0px 0px 15px 15px;
 }
