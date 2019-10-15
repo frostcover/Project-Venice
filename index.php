@@ -53,34 +53,44 @@ if(isset($_GET['query'])) {
     }
 
 ?>
-
 <html>
 <head>
     <title>#tagSearch</title>
-    <link rel="stylesheet" href="design.css">
     <link rel="shortcut icon" href="srchfv.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 hdr no-pad">
             <div class="logo">#tag<span style="font-weight: 300">Search</span></div>
+
         </div>
-        <div class="sbxcont">
-            <div class="outercover">
-                <form action="" style="height: 23px;">
-                    <input type="text" class="sbox" name="query" placeholder="Search for #anything #you #like...." >
+        <div class="col-md-8 no-pad">
+            <div class="sbxcont">
+                <form action="">
+                    <input type="text" name="query" placeholder="Search for #anything #you #like....">
                 </form>
             </div>
         </div>
-        <div class="result">
-            <div class="rhdr">Results for <?php echo $query ?> | #tag<span style="font-weight: 300">Search</span> </div>
-            <?php echo $response; ?>
-            <div class="end">-finish-</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 no-pad" style="border-right:1px solid #b9b9b9;">
+            <footer>
+                Build 2016 | Shubhesh Dwivedi (<a href='https://twitter.com/cafeshoes'
+                                                  style='text-decoration:none; color:#2196f3;'>@cafeshoes</a>)
+            </footer>
         </div>
-        <div class="footer">
-            Build 2017 | Shubhesh Dwivedi (<a href = 'https://twitter.com/cafeshoes' style='text-decoration:none; color:#2196f3;'>@cafeshoes</a>)
+        <div class="col-md-8 no-pad">
+            <div class="result">
+                <div class="rhdr"><h2>Results</h2> <?php echo $query ?></div>
+                <hr>
+                <?php echo $response; ?>
+            </div>
         </div>
     </div>
+</div>
 </body>
 </html>
