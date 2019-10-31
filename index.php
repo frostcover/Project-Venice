@@ -57,7 +57,7 @@ if(isset($_GET['query'])) {
 <head>
     <title>#tagSearch</title>
     <link rel="shortcut icon" href="srchfv.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="design.css">
     <meta name="viewport"
@@ -68,7 +68,7 @@ if(isset($_GET['query'])) {
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4 hdr no-pad">
+        <div class="col-md-4 no-pad">
             <div class="logo">#tag<span style="font-weight: 300">Search</span></div>
 
         </div>
